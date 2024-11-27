@@ -1,0 +1,166 @@
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #6c4f75;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Espaçamento entre os links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Links da Navbar */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+}
+
+/* Efeitos de Hover */
+nav ul li a:hover {
+    color: #f9d8e0; /* Cor de texto quando passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    background-color: #9b7e9d; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao passar o mouse */
+}
+
+/* Estilo do foco (para acessibilidade) */
+nav ul li a:focus {
+    outline: 3px solid #f9d8e0; /* Destaque de foco para navegação com teclado */
+    outline-offset: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Empilha os itens da navbar para telas menores */
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.5em; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+
+/* Home */
+#home {
+    background-color: #f9d8e0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: #6c4f75;
+}
+
+#home p {
+    font-size: 1.5em;
+    color: #a07d91;
+}
+
+button {
+    background-color: #6c4f75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #9b7e9d;
+}
+
+/* Seções */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.skills div {
+    width: 200px;
+    text-align: left;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.project-card h3 {
+    color: #6c4f75;
+}
+
+.project-card a {
+    color: #6c4f75;
+    text-decoration: none;
+}
+
+/* Contatos */
+#contatos .social-links a {
+    margin: 0 15px;
+}
+
+#contatos img {
+    width: 40px;
+    height: 40px;
+}
